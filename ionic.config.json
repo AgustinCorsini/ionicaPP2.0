@@ -1,0 +1,7 @@
+{
+  "name": "appgdv",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

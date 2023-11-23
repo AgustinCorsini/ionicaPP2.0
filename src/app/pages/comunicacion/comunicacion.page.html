@@ -1,0 +1,141 @@
+<ion-header>
+
+  <ion-toolbar color="tertiary">
+
+    <ion-button fill="clear" [routerLink]="['/home']" id="boton">GDV</ion-button>
+
+    <ion-buttons slot="start">
+
+      <ion-menu-button></ion-menu-button>
+
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+
+      <ion-button [routerLink]="['/pago']">
+
+        <ion-label>Tarjetas y pagos</ion-label>
+
+      </ion-button>
+
+      <ion-button [routerLink]="['/direc']">
+
+        <ion-label>Mi Direccion</ion-label>
+
+      </ion-button>
+
+      <ion-button [routerLink]="['/comunicacion']">
+
+        <ion-label>Comunicacion</ion-label>
+
+      </ion-button>
+
+      <ion-button [routerLink]="['/seg']">
+
+        <ion-label>Seguridad y Privacidad</ion-label>
+
+      </ion-button>
+
+      <ion-button [routerLink]="['/perfil']">
+
+        <ion-label>Perfil</ion-label>
+
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <div class="container content">
+    <h2 class="ion-margin-top ion-margin-bottom">Comunicación</h2>
+    <div class="ion-margin-top">
+      <form>
+        <label><h3>Agregar Contacto</h3></label>
+        <ion-item>
+          <ion-label>Nombre y Apellido</ion-label>
+          <ion-input type="text" placeholder="Nombre y Apellido" id="nombreContancto"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Teléfono</ion-label>
+          <ion-input type="number" placeholder="Teléfono" id="telefono"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="text" placeholder="Email" id="emailContacto"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nota</ion-label>
+          <ion-input type="text" placeholder="No disponible los martes" id="nota"></ion-input>
+        </ion-item>
+
+        <label><h3 class="h3Empleado">Agregar Empleado</h3></label>
+        <ion-item>
+          <ion-label>Sucursal</ion-label>
+          <ion-select placeholder="Sucursal" id="sucursal">
+            <ion-select-option value="1">Sucursal 1</ion-select-option>
+            <ion-select-option value="2">Sucursal 2</ion-select-option>
+            <ion-select-option value="3">Sucursal Mar de Plata</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nombre y Apellido</ion-label>
+          <ion-input type="text" placeholder="Nombre y Apellido" id="nombreEmpleado"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Rol</ion-label>
+          <ion-input type="text" placeholder="Rol" id="rol"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="text" placeholder="Email" id="emailEmpleado"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Teléfono</ion-label>
+          <ion-input type="number" placeholder="Teléfono" id="telefonoEmpleado"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nota</ion-label>
+          <ion-input type="text" placeholder="No disponible los martes" id="notaEmpleado"></ion-input>
+        </ion-item>
+
+        <div class="ion-margin-top">
+          <ion-row>
+            <ion-col>
+              <ion-button expand="full" color="primary">Guardar Cambios</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand="full" color="medium">Cancelar</ion-button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+
+  <ion-toolbar>
+
+    <ion-title id="pie">GDV</ion-title>
+
+    <ion-buttons slot="end">
+
+      <ion-button id="pie">FAQ</ion-button>
+
+      <ion-button id="pie">Informacion Fiscal</ion-button>
+
+      <ion-button id="pie">Ayuda</ion-button>
+
+      <ion-button id="pie">Privacidad</ion-button>
+
+      <ion-button id="pie">Defensa al consumidor</ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-footer>
